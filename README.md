@@ -21,7 +21,7 @@ linux@raj:~$ adb install ViewPGPkey.apk
 Performing Streamed Install
 Success
 ```
-<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/1.png" align="right" height=450px; width=450px;>
+<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/1.png" align="middle" height=450px; width=450px;>
 An error message occurs: Device is rooted device! – this suggests that the application does not work as expected.
 
 ## Decompilation
