@@ -1,3 +1,4 @@
+![](https://howtocrazy.b-cdn.net/wp-content/uploads/2018/07/bypass-app-root-detection-android.png)
 # Bypassing Root Detection and Certificate Pinning
 * A minimal guide demonstrating Bypassing Root Detection and Certificate Pinning 
 
