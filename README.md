@@ -310,11 +310,11 @@ public class AllowAllTrustManager {
 }
 ```
 A typical way of getting the Smail code would be compiling above class in the Android Studio and decompiling the resulting app with apktool or backsmali help (just as I presented in the previous paragraphs). This time, however, I will use java2smail - a really great extension that converts Java code to Smali. The code translation is made directly in the Android Studio – but without building the app process.
-```
+```md
 java2smali: https://github.com/ollide/intellij-java2smali
 Android Studio -> Build -> Compile to smali
 ```
-```m
+```smali
 .class public Lpl/isec/ssl/AllowAllTrustManager;
 .super Ljava/lang/Object;
 .source "AllowAllTrustManager.java"
@@ -343,7 +343,7 @@ Android Studio -> Build -> Compile to smali
     return-object v0
 .end method
 ```
-```m
+```smali
 .class final Lpl/isec/ssl/AllowAllTrustManager$1;
 .super Ljava/lang/Object;
 .source "AllowAllTrustManager.java"
@@ -419,7 +419,7 @@ Android Studio -> Build -> Compile to smali
 .end method
 ```
 Next I copy all generated Smali classes to the directory where my decompiled application is.
-```
+```md
 * To separate your classes from the original source code, you can create a smali_classes2 directory which will be compiled to classes2.dex file.
 ```
 ```bash
@@ -428,12 +428,12 @@ linux@Raj:~$ cp $HOME/AndroidStudioProjects/ssl/app/src/main/java/linux/raj/ssl/
 linux@Raj:~$ cp $HOME/AndroidStudioProjects/ssl/app/src/main/java/linux/raj/ssl/AllowAllTrustManager\$1.smali decompiled/smali_classes2/linux/raj/ssl/
 ```
 Now I can replace the original TrustManager with my own that trusts all certificates. For this purpose, I edit the constructor of DownloadPGPKey class :
-```
+```md
 * comment out code which creates the TrustManager
 * inject an invocation of my static method pl.isec.ssl.AllowAllTrustManager.getInstance()
 * comment out an invocation of method certificatePinner() that enables pinning
 ```
-```m
+```smali
 #----- Original code of DownloadPGPKey.smali
 
 # direct methods
@@ -462,7 +462,7 @@ Now I can replace the original TrustManager with my own that trusts all certific
 
    move-result-object p1
 ```
-```m
+```smali
 #----- Modified code of DownloadPGPKey.smali
 
 # direct methods
