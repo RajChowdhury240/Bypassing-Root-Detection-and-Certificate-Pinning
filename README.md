@@ -51,7 +51,7 @@ Using python3 as Python interpreter
 Output written to ViewPGPkey.jar
 2609 classes translated successfully, 0 classes had errors
 ```
-<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/3.png" align="middle" height=900px; width=650px;>
+![](https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/3.png)
 ## Bypassing root detection
 Root detection libraries implement their own methods to detect a rooted device, more or less advanced, but most of these libraries have the same weakness: detection is invoked as a method that returns true or false.
 
@@ -153,7 +153,7 @@ linux@Raj:~$ adb install ./decompiled/dist/ViewPGPkey.apk
 Performing Streamed Install
 Success
 ```
-![](https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/4.png)
+<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/4.png" align="middle" height=900px; width=650px;>
 
 Yeah! Something has changed. But the application still does not work properly.
 
