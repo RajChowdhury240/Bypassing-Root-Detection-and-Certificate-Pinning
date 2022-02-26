@@ -494,5 +494,7 @@ Now I can replace the original TrustManager with my own that trusts all certific
    #move-result-object p1
 ```
 #### It is time to test all changes so I compile, sign, reinstall and launch the application again. 
+
 <img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/6.png" align="middle" height=900px; width=650px;>
+
 ##### Happy Hacking !
