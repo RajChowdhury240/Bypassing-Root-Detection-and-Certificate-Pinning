@@ -41,7 +41,7 @@ I: Copying unknown files...
 I: Copying original files...
 ```
 decompiled /smali/pl/isec/viepgpkey/MainActivity.smali
-<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/2.png" align="middle" height=900px; width=650px;>
+![](https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/2.png)
 The second one tries to translate Dalvik bytecode to Java bytecode which can be reviewed using the JD-GUI.
 ```bash
 linux@Raj:~$ enjarify ViewPGPkey.apk -o ViewPGPkey.jar 
@@ -51,8 +51,7 @@ Using python3 as Python interpreter
 Output written to ViewPGPkey.jar
 2609 classes translated successfully, 0 classes had errors
 ```
-![](https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/3.png)
-
+<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/3.png" align="middle" height=900px; width=650px;>
 ## Bypassing root detection
 Root detection libraries implement their own methods to detect a rooted device, more or less advanced, but most of these libraries have the same weakness: detection is invoked as a method that returns true or false.
 
