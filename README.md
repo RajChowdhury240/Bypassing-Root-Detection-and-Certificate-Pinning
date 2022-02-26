@@ -21,7 +21,7 @@ linux@raj:~$ adb install ViewPGPkey.apk
 Performing Streamed Install
 Success
 ```
-<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/1.png" align="middle" height=950px; width=650px;>
+<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/1.png" align="middle" height=900px; width=650px;>
 An error message occurs: Device is rooted device! – this suggests that the application does not work as expected.
 
 ## Decompilation
@@ -41,7 +41,7 @@ I: Copying unknown files...
 I: Copying original files...
 ```
 decompiled /smali/pl/isec/viepgpkey/MainActivity.smali
-![](https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/2.png)
+<img src="https://raw.githubusercontent.com/Rajchowdhury420/temp-files-for-writeup/main/2.png" align="middle" height=900px; width=650px;>
 The second one tries to translate Dalvik bytecode to Java bytecode which can be reviewed using the JD-GUI.
 ```bash
 linux@Raj:~$ enjarify ViewPGPkey.apk -o ViewPGPkey.jar 
