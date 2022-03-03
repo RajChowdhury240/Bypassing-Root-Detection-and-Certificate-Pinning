@@ -2,7 +2,6 @@
 # Bypassing Root Detection and Certificate Pinning
 * A minimal guide demonstrating Bypassing Root Detection and Certificate Pinning 
 
-
 ## Target
 a small application which implements Root Detection and Certificate Pinning. 
 It downloads and displays a PGP public key from https://isec.pl/en/pgp.key only if ran on a non-rooted device and when the SSL certificate is correct.
