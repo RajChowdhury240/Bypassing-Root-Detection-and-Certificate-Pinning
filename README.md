@@ -4,9 +4,9 @@
 
 ## Target
 a small application which implements Root Detection and Certificate Pinning. 
-It downloads and displays a PGP public key from https://isec.pl/en/pgp.key only if ran on a non-rooted device and when the SSL certificate is correct.
+It downloads and displays a PGP public key from isec.pl only if ran on a non-rooted device and when the SSL certificate is correct.
 
-The .apk file can be downloaded from: https://drive.google.com/open?id=1OS4SvqbkgSj7wGPEI7WkmDy2mJngCydB
+The .apk file & the PGP Key is given in the repository
 
 ## Analysis
 Let's start Burp Suite and set proxy for an Android emulator (which is my rooted device).
